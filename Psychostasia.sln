@@ -3,15 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30524.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psychostasia.WebTests", "Psychostasia.WebTests\Psychostasia.WebTests.csproj", "{9D543BE4-A3F3-40D8-842B-D603E61FE71D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psychostasia.Web", "Psychostasia.Web\Psychostasia.Web.csproj", "{86EEFFDD-039E-4424-8E6C-B646B297FB13}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Psyostasia.Core", "Psyostasia.Core", "{15C54A3B-11EC-4BBB-BF89-E5D1A954D937}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Psychostasia.Web", "Psychostasia.Web", "{F4BA06D6-D99D-4CC6-8E8C-5322D7D5AA14}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1137B2A0-4409-4B5D-957E-10553A6E96A6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psychostasia.Web.DriverFactory", "Psychostasia.Web.DriverFactory\Psychostasia.Web.DriverFactory.csproj", "{892B43BA-3603-4768-97A4-8EAFE9FE31D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,21 +13,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9D543BE4-A3F3-40D8-842B-D603E61FE71D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D543BE4-A3F3-40D8-842B-D603E61FE71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D543BE4-A3F3-40D8-842B-D603E61FE71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D543BE4-A3F3-40D8-842B-D603E61FE71D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{892B43BA-3603-4768-97A4-8EAFE9FE31D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{892B43BA-3603-4768-97A4-8EAFE9FE31D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{892B43BA-3603-4768-97A4-8EAFE9FE31D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{892B43BA-3603-4768-97A4-8EAFE9FE31D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EEFFDD-039E-4424-8E6C-B646B297FB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EEFFDD-039E-4424-8E6C-B646B297FB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EEFFDD-039E-4424-8E6C-B646B297FB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EEFFDD-039E-4424-8E6C-B646B297FB13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{9D543BE4-A3F3-40D8-842B-D603E61FE71D} = {1137B2A0-4409-4B5D-957E-10553A6E96A6}
-		{892B43BA-3603-4768-97A4-8EAFE9FE31D7} = {F4BA06D6-D99D-4CC6-8E8C-5322D7D5AA14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B319905-FD1F-46FE-ABC1-63F084A7F64F}
