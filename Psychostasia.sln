@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30524.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Psychostasia.Web", "Psychostasia.Web\Psychostasia.Web.csproj", "{86EEFFDD-039E-4424-8E6C-B646B297FB13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psychostasia.Web", "Psychostasia.Web\Psychostasia.Web.csproj", "{86EEFFDD-039E-4424-8E6C-B646B297FB13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sandbox", "Sandbox\Sandbox.csproj", "{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E0D7D525-27CF-4C5E-8196-92B54136CA9A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		LocalChrome.runsettings = LocalChrome.runsettings
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psychostasia.Web.Selenium", "Psychostasia.Web.Selenium\Psychostasia.Web.Selenium.csproj", "{83BA8E4C-8702-427E-AD53-68B526D89D34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Psychostasia.Web.Protractor", "Psychostasia.Web.Protractor\Psychostasia.Web.Protractor.csproj", "{0108875A-B31F-46DF-B00B-F4FC8B597DAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +31,14 @@ Global
 		{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6585ADBA-B63D-474B-AA8B-A9579FB2F0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83BA8E4C-8702-427E-AD53-68B526D89D34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BA8E4C-8702-427E-AD53-68B526D89D34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BA8E4C-8702-427E-AD53-68B526D89D34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BA8E4C-8702-427E-AD53-68B526D89D34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0108875A-B31F-46DF-B00B-F4FC8B597DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0108875A-B31F-46DF-B00B-F4FC8B597DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0108875A-B31F-46DF-B00B-F4FC8B597DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0108875A-B31F-46DF-B00B-F4FC8B597DAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

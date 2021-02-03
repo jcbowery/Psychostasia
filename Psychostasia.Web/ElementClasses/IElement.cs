@@ -1,29 +1,43 @@
-﻿using OpenQA.Selenium;
-using System.Collections.ObjectModel;
+﻿using Psychostasia.Web.ElementSearch;
 using System.Drawing;
 
 namespace Psychostasia.Web.ElementClasses
 {
-    public interface IElement
+    public interface IElement : IFinder
     {
-        bool Displayed { get; }
-        bool Enabled { get; }
-        Point Location { get; }
-        bool Selected { get; }
-        Size Size { get; }
-        string TagName { get; }
-        string Text { get; }
-        IWebElement WrappedElement { get; }
+        public string TagName { get; }
 
-        void Clear();
-        void Click();
-        void RightClick(IDriver driver);
-        Element FindElement(By by);
-        ReadOnlyCollection<IWebElement> FindElements(By by);
-        string GetAttribute(string attributeName);
-        string GetCssValue(string propertyName);
-        string GetProperty(string propertyName);
-        void SendKeys(string text);
-        void Submit();
+        public string Text { get; }
+
+        public bool Enabled { get; }
+
+        public bool Selected { get; }
+
+        public Point Location { get; }
+
+        public Size Size { get; }
+
+        public bool Displayed { get; }
+
+        public void Clear();
+
+
+        public void Click();
+
+
+        public string GetAttribute(string attributeName);
+
+
+        public string GetCssValue(string propertyName);
+
+
+        public string GetProperty(string propertyName);
+
+
+        public void SendKeys(string text);
+
+
+        public void Submit();
+
     }
 }

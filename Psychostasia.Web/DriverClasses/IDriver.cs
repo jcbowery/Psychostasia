@@ -1,28 +1,36 @@
-﻿using OpenQA.Selenium;
-using Psychostasia.Web.ElementClasses;
+﻿using Psychostasia.Web.ElementSearch;
 using System.Collections.ObjectModel;
 
-namespace Psychostasia.Web
+namespace Psychostasia.Web.DriverClasses
 {
-    public interface IDriver
+    public interface IDriver : IFinder
     {
-        string CurrentWindowHandle { get; }
-        string PageSource { get; }
-        string Title { get; }
-        string Url { get; }
-        ReadOnlyCollection<string> WindowHandles { get; }
-        IWebDriver WrappedDriver { get; }
+        public string Url { get; }
 
-        void Back();
-        void CloseTab();
-        IElement FindElement(By by);
-        ReadOnlyCollection<IElement> FindElements(By by);
-        void Forward();
-        void GoTo(string url);
-        void GoTo(string account, string pass, string url);
-        void Quit();
-        void Refresh();
-        void SignIntoAuthWindow(string account, string pass);
-        string GrabAlertText();
+        public string Title { get; }
+
+        public string PageSource { get; }
+
+        public string CurrentWindowHandle { get; }
+
+        public ReadOnlyCollection<string> WindowHandles { get; }
+
+        public void Close();
+
+
+        public void Dispose();
+
+        public void GoTo(string url);
+
+
+
+
+
+
+
+        public void Quit();
+
+
+
     }
 }

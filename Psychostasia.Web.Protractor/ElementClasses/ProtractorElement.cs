@@ -1,20 +1,18 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
-using System;
-using System.Collections.ObjectModel;
+using Protractor;
+using Psychostasia.Web.ElementClasses;
 using System.Drawing;
 
-namespace Psychostasia.Web.ElementClasses
+namespace Psychostasia.Web.Protractor.ElementClasses
 {
-    public class Element : IElement
-
+    public class ProtractorElement : IElement
     {
-        public Element(IWebElement wrappedElement)
+        private readonly NgWebElement WrappedElement;
+
+        public ProtractorElement(NgWebElement wrappedElement)
         {
             WrappedElement = wrappedElement;
         }
-
-        public IWebElement WrappedElement { get; private set; }
 
         public string TagName => WrappedElement.TagName;
 
@@ -40,22 +38,10 @@ namespace Psychostasia.Web.ElementClasses
             WrappedElement.Click();
         }
 
-        public void RightClick(IDriver driver)
+        public IElement FindElement(By by)
         {
-            Actions actions = new Actions(driver.WrappedDriver);
-            actions.ContextClick(this.WrappedElement).Perform();
-        }
-
-
-        public Element FindElement(By by)
-        {
-            var unwrappedElement = WrappedElement.FindElement(by);
-            return new Element(unwrappedElement);
-        }
-
-        public ReadOnlyCollection<IWebElement> FindElements(By by)
-        {
-            throw new NotImplementedException();
+            var element = WrappedElement.FindElement(by);
+            return new ProtractorElement(element);
         }
 
         public string GetAttribute(string attributeName)
